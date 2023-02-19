@@ -1,0 +1,43 @@
+/*기본 및 시멘틱태그 start*/
+body {
+    font-family: 'Nanum Myeongjo', serif; /*폰트: 나눔명조*/
+    font-weight: bolder;
+    
+}
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    height: 2px;
+    background: #ccc;
+}
+/*기본 및 시멘틱태그 end*/
+/*nav start*/
+#navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.8s;
+}
+#navIcon{
+    animation: rotate_image 2s linear infinite;
+    transform-origin: 50% 50%;}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*nav end*/
+/*main start*/
+.main{
+    height: 500px;
+    background-image: url('/JnBlogProject/resource/backgroud.jpg');
+    padding-top: 100px;
+}
+#main_title{
+    color: white;
+}
+#moreInfo{
+    border-radius: 10px;
+    font-weight: bolder;
+}
+/*main end*/
