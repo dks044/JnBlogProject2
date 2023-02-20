@@ -18,14 +18,23 @@
 <!--nav start-->
 <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i id="navIcon" class="fa-solid fa-fan"></i> AJN's Portfolio</a>
+      <a id="nav_brand" class="navbar-brand" href="#"><i id="navIcon" class="fa-solid fa-fan"></i> AJN's Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a id="nav_aboutme" class="nav-link active" aria-current="page">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav_skills" class="nav-link active" aria-current="page" >Skills</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav_archiving" class="nav-link active" aria-current="page">Archiving</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav_project" class="nav-link active" aria-current="page">Project</a>
           </li>
         </ul>
       </div>
@@ -46,7 +55,8 @@
   </div>
 </div>
 <!--main end-->
-<div class="container-12 text-center">
+<!--about me start-->
+<div id="aboutMe" class="container-12 text-center">
   <br>
   <h1 style="font-weight: bolder;">About me</h1>
   <hr style="width: 45%; background: black;">
@@ -82,7 +92,7 @@
       <div class="row align-items-center">
         <div class="col-4 text-end"><i style="font-size: 20px;" class="fa-solid fa-phone"></i></div>
         <div class="col-6 text-start">
-          연락처<br>010-4031-5630
+          연락처<p style="font-size: 5px;">010-4031-5630</p>
         </div>
       </div>
     </div>
@@ -103,7 +113,706 @@
       </div>
     </div>
   </div>
+</div><br><br><br><br><br>
+<!--about me end-->
+<!--skill start-->
+<div id="skill" class="container-12 text-center">
+  <br><br>
+  <h1 style="font-weight: bolder; color: white;"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h1>
+  <p style="color: white;">스킬스택 버튼을 누르면 기술스택들이 표시 됩니다.</p>
+  <div class="row align-items-center">
+    <div class="col">
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#frontEnd" aria-expanded="true" aria-controls="collapseExample" style="color: white; font-weight: bolder; border:2px solid black;">
+        Frontend
+      </button>
+      <div class="collapse show" id="frontEnd">
+        <div class="card card-body" style="width: 300px; margin-left: auto; margin-right: auto;">
+          <span>
+            <img class="skills_box" src="/JnBlogProject/resource/html5.png">
+            <img class="skills_box" src="/JnBlogProject/resource/css3.png">
+            <img class="skills_box_javaScript" src="/JnBlogProject/resource/javascript.png">
+            <img class="skills_box" src="/JnBlogProject/resource/bootstrap.png" >
+            <img class="skills_box" src="/JnBlogProject/resource/ajax.png">
+            <img class="skills_box" src="/JnBlogProject/resource/jquery.png">
+            <img class="skills_box_thymeleaf" src="/JnBlogProject/resource/thymeleaf_logo_white.png">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#backEnd" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-weight: bolder; border:2px solid black;">
+        Backend
+      </button>
+      <div class="collapse" id="backEnd">
+        <div class="card card-body" style="width: 300px; margin-left: auto; margin-right: auto;">
+          <span>
+            <img class="skills_box_springBoot" src="/JnBlogProject/resource/springBoot.png">
+            <img class="skills_box_jpa" src="/JnBlogProject/resource/Spring Data JPA.png">
+            <img class="skills_box_springSecurity" src="/JnBlogProject/resource/spring_security.png">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="row align-items-center">
+    <div class="col">
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#dataBase" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-weight: bolder; border:2px solid black;">
+        DataBase
+      </button>
+      <div class="collapse" id="dataBase">
+        <div class="card card-body" style="width: 300px; margin-left: auto; margin-right: auto;">
+          <span>
+            <img class="skills_box_HIBERNATE" src="/JnBlogProject/resource/HIBERNATE LOGO PNG.png">
+            <img class="skills_box_h2" src="/JnBlogProject/resource/h2-logo-2.png">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#versionControll" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-weight: bolder; border:2px solid black;">
+        VersionControll
+      </button>
+      <div class="collapse" id="versionControll">
+        <div class="card card-body" style="width: 300px; margin-left: auto; margin-right: auto;">
+          <span>
+            <img class="skills_box_git" src="/JnBlogProject/resource/git.png">
+            <img class="skills_box" src="/JnBlogProject/resource/github.png">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="row align-items-center">
+    <div class="col">
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#deployment" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-weight: bolder; border:2px solid black;">
+        Deployment
+      </button>
+      <div class="collapse" id="deployment">
+        <div class="card card-body" style="width: 300px; margin-left: auto; margin-right: auto;">
+          <span>
+            <img class="skills_box" src="/JnBlogProject/resource/AWS.png">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#tool" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-weight: bolder; border:2px solid black;">
+        Tool
+      </button>
+      <div class="collapse" id="tool">
+        <div class="card card-body" style="width: 300px; margin-left: auto; margin-right: auto;">
+          <span>
+            <img class="skills_box" src="/JnBlogProject/resource/spring-3-logo-png-transparent.png">
+            <img class="skills_box" src="/JnBlogProject/resource/visualStudio.png">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
 </div>
+<!--skill end-->
+<!--Archiving start-->
+<div id="archiving" class="container-12 text-center">
+  <br><br>
+  <h1 style="font-weight: bolder; color: white;"><i class="fa-solid fa-box-archive"></i> Archiving</h1><br>
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <div id="archiving_card" class="card" style="width: 18rem;">
+        <img style="width: 100px; height: 100px; margin-left: auto; margin-right: auto; margin-top: 10px;" src="/JnBlogProject/resource/github.png">
+        <div class="card-body">
+          <h5 style="font-weight: bolder;" class="card-title">GitHub</h5>
+          <h6 class="card-subtitle mb-2 text-muted">개인 소스코드 저장소입니다.</h6>
+          <p style="font-size: 12px;" class="card-text">
+            현재까지의 프로젝트들<br>
+            교육과정 중 학습하던 코드들<br>
+            백업된 코드들
+          </p>
+          <a href="https://github.com/dks044" class="btn btn-dark" target="_blank"><i class="fa-solid fa-link"></i> 링크로 이동하기</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div id="archiving_card" class="card" style="width: 18rem;">
+        <img style="width: 100px; height: 100px; margin-left: auto; margin-right: auto; margin-top: 10px;" src="/JnBlogProject/resource/naverBlog.png">
+        <div class="card-body">
+          <h5 style="font-weight: bolder;" class="card-title">NAVER BlOG</h5>
+          <h6 class="card-subtitle mb-2 text-muted">학습 기록 및 지식 공유목적의 블로그</h6>
+          <p style="font-size: 12px;" class="card-text">
+            개발자의 길을 걸으며 관련 지식들 정리<br>
+            공부한것을 내것으로 숙지하기 위한 기록들<br>
+            교육과정 중 수업 내용들 정리<br>
+            정보공유를 통한 선한 영향력 행사
+          </p>
+          <a href="https://blog.naver.com/buzz7811" class="btn btn-dark" target="_blank"><i class="fa-solid fa-link"></i> 링크로 이동하기</a>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+</div>
+<!--Archiving end-->
+<!--Project start-->
+<div id="project" class="container-12 text-center">
+  <br><br>
+  <h1 style="font-weight: bolder; color: white; font-size: 70px;"><i class="fa-solid fa-book"></i> Project</h1><br>
+  <div id="project_" class="container-12"><!--project Box start-->
+    <p style="font-size: 40px;">JnBlogProject2<span style="font-size: 12px;" class="badge text-bg-light">23.02.16 ~ 23.02.21</span><span style="font-size: 9px;" class="badge text-bg-info">개인 프로젝트</span></p>
+    <p>자기소개 및 포트폴리오 소개 페이지입니다.</p>
+    <hr style="background-color: black; width: 30%;">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/JnBlogProject/resource/jnBlogProject2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/jnBlogProject2_1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/jnBlogProject2_2.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne1">
+              <button style="font-weight: bolder;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne1">
+                🧐 배경
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne1" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne1">
+              <div class="accordion-body">
+                <p style="font-size: 12px;">
+                  <strong style="font-size: 14px; color: red;">지금 보고계신 페이지입니다.</strong> 자기소개 및 포트폴리오 소개 용도로 제작한 사이트입니다.
+                  기존의 자기소개 페이지및 웹포트롤리오를 만든적이 있지만,
+                  하나 더 만든 이유는 첫번쨰로 <strong style="color: red;">반응형 웹페이지</strong>로 만들고 싶다는 욕구가 있었고,
+                  두번쨰로 디자인 <strong style="color: red;">레이아웃 학습</strong>겸 제작하게 됐습니다.
+                
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo1">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo1" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo1">
+                📜프로젝트 구현기능
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo1">
+              <div class="accordion-body">
+                <ul style="list-style-type: none; font-size: 12px;">
+                  <li>간단한 자기소개 및 인적사항</li>
+                  <li>기술스택</li>
+                  <li>깃허브 및 네이버 블로그 링크</li>
+                  <li>프로젝트 경험</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree1">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree1" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree1">
+                ⚒️프로젝트 기술 스택
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree1">
+              <div style="font-size: 12px;" class="accordion-body">
+                Frontend : HTML, CSS, JavaScript, BootStrap
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour1">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour1" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour1">
+                💡프로젝트를 진행하면서..
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour1">
+              <div style="font-size: 12px;" class="accordion-body">
+                BootStrap의 Grid기능을 최대한 활용해가면서 반응형 웹사이트를 제작할려고 했습니다.<br>
+                해당 페이지를 제작하면서 디자인 관련해서, 특히 <strong style="color: red;">가독성</strong>을
+                많이 학습하게 된 계기가 된것 같습니다, 이후에 React, Vue.js 등 학습해서
+                다음에 더 멋있고, 이쁘게 웹 사이트, 앱을 만들고 싶은 동기부여도 생겼습니다.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive1">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive1" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive1">
+                👉링크
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive1">
+              <div style="font-size: 12px;" class="accordion-body">
+                <a href="https://github.com/dks044/JnBlogProject2" target="_blank"><i class="fa-brands fa-square-github"></i>소스코드</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--project Box end-->
+  <br><br>
+  <div id="project_" class="container-12"><!--project Box start-->
+    <p style="font-size: 40px;">HopeStore<span style="font-size: 12px;" class="badge text-bg-light">23.01.01 ~ 23.02.08</span><span style="font-size: 9px;" class="badge text-bg-info">개인 프로젝트</span></p>
+    <p>개인 쇼핑몰 컨셉의 웹사이트 입니다.</p>
+    <hr style="background-color: black; width: 30%;">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleIndicators2" class="carousel slide"><!--슬라이드쇼 추가할떄 id값 바꿔야함-->
+          <div class="carousel-indicators">
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/JnBlogProject/resource/HopeStore/메인페이지1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/HopeStore/상품페이지.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/HopeStore/상품페이지2.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+            <span style="background-color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+            <span style="background-color: black;" class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne2">
+              <button style="font-weight: bolder;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne2" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne2">
+                🧐 배경
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne2">
+              <div class="accordion-body">
+                <p style="font-size: 12px;">
+                  <strong style="color: red;">개인 쇼핑몰을 갖고 싶다는 생각에서 출발</strong>해서 쇼핑몰 프로젝트를 기획하게 됐습니다.
+                  스프링 부트, JPA, 시큐리티 등의 기술스택들을 이용해 개인 포트폴리오를 완성했었지만, 관련 지식을 더 심화적으로 숙지할 필요성을 느껴서 학습 목적으로 시작하게 됐습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo2">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo2">
+                📜프로젝트 구현기능
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo2">
+              <div class="accordion-body">
+                <strong style="font-weight: bolder; font-size: 15px;">회원(Member)</strong><br>
+                <span style="font-size: 11px;">회원가입 / 로그인, 로그아웃 / 회원 탈퇴</span>
+                <br>
+                <strong style="font-weight: bolder; font-size: 15px;">상품(Item)</strong><br>
+                <span style="font-size: 11px;">상품 등록 / 상품 수정 / 상품 삭제 / 상품 리스트 (메인페이지, 둘러보기 페이지) / 상품 상세 페이지 / 상품 정렬</span>
+                <br>
+                <strong style="font-weight: bolder; font-size: 15px;">주문(Order)</strong><br>
+                <span style="font-size: 11px;">상품 주문 / 주문 내역 조회 / 판매 목록(Admin) / 입금 확인처리(Admin) / 주문취소</span>
+                <br>
+                <strong style="font-weight: bolder; font-size: 15px;">장바구니(Cart)</strong><br>
+                <span style="font-size: 11px;">장바구니 담기 / 장바구니 조회 / 장바구니 삭제</span>
+                <br>
+                <strong style="font-weight: bolder; font-size: 15px;">반응형 웹 디자인 구현</strong><br>
+                <span style="font-size: 11px;">BootStrap의 Grid를 이용하여 반응형 웹 디자인 구현</span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree2">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree2" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree2">
+                ⚒️프로젝트 기술 스택
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree2">
+              <div style="font-size: 12px;" class="accordion-body">
+                <strong style="font-size: 15px;">Frontend</strong> : HTML, CSS, JavaScript, AJAX, Thymeleaf<br>
+                <strong style="font-size: 15px;">Backend</strong> : Spring Boot, Spring Security, Spring Data JPA<br>
+                <strong style="font-size: 15px;">Database</strong> : Hibernate, H2 DataBase<br>
+                <strong style="font-size: 15px;">OpenAPI</strong> : 카카오 주소찾기 API, BootStrap
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour2">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour2" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour2">
+                💡프로젝트를 진행하면서..
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour2">
+              <div style="font-size: 12px;" class="accordion-body">
+                흔한 쇼핑몰 프로젝트일지라도 완성하는 것에 초점을 두지 않고, <strong style="color: red;">사용되는 기술에 대한 정확한 개념 및 사용법, 동작원리</strong>에 대해서 초점을 맞췄습니다.<br>
+
+                개발 과정에서 맞이하는 에러 및 궁금증들을 자세하게 찾아보고 정리하면서 전체적인 흐름 파악을 목표로 두었으며 <strong style="color: red;">프론트보다는 백엔드</strong>에 좀 더 집중했습니다.<br>
+
+                프로젝트를 진행하며 부족한 <strong style="color: red;">AJAX</strong> 기술 등 학습 하게 되었고, 카트기능, 주문기능을 구현하면서 <strong style="color: RED;">테이블간 연관관계</strong>에 대해서 더욱 이해하게 된 계기가 되었습니다.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive2">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive2" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive2">
+                👉링크
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive2">
+              <div style="font-size: 12px;" class="accordion-body">
+                <a href="https://youtu.be/x9m2ydq_dQc" target="_blank">💿시연 영상 </a> <br>
+                <a href="https://url.kr/7c3d56" target="_blank">📊PPT</a><br>
+                <a href="https://github.com/dks044/HopeStore" target="_blank"><i class="fa-brands fa-square-github"></i>소스코드</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--project Box end--><br><br>
+  <div id="project_" class="container-12"><!--project Box start-->
+    <p style="font-size: 40px;">AJN's QnA Coummity<span style="font-size: 12px;" class="badge text-bg-light">22.12.09 ~ 22.12.30</span><span style="font-size: 9px;" class="badge text-bg-info">개인 프로젝트</span></p>
+    <p>QnA할 수 있는 간단한 콘셉트의 커뮤니티 사이트 입니다.(AWS 호스팅중)</p>
+    <hr style="background-color: black; width: 30%;">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleIndicators3" class="carousel slide"><!--슬라이드쇼 추가할떄 id값 바꿔야함-->
+          <div class="carousel-indicators">
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/JnBlogProject/resource/QnA/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/QnA/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/QnA/3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+            <span style="background-color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+            <span style="background-color: black;" class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne3">
+              <button style="font-weight: bolder;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne3" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne3">
+                🧐 배경
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne3" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne3">
+              <div class="accordion-body">
+                <p style="font-size: 12px;">
+                  21년도에 웹개발자 훈련과 팀프로젝트를 진행하며 개발자의 길을 걸었지만, 당시 교육 받던 기술과 현재 실용화된 기술의 차이는 크다고 생각되어, <strong style="color: red;">스프링시큐리티, 스프링부트3.0.0, Gradle-groovy, ORM</strong>  등 기술을 활용한 'AJN's Qna Coummity' 1인 프로젝트 개발을 시작했습니다.<br><br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo3">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo3" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo3">
+                📜프로젝트 구현기능
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo3">
+              <div class="accordion-body">
+                <p style="font-size: 12px;">
+                  스프링 시큐리티를 활용한 보안 기술 적용<br>
+                  부트스트랩을 활용한 깔끔한 UI 구현<br>
+                  검색, 페이징, 정렬 등 깔끔한 게시판(커뮤니티) 기능 구현<br>
+                  스프링부트 3.0 웹프레임워크 활용
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree3">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree3" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree3">
+                ⚒️프로젝트 기술 스택
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree3">
+              <div style="font-size: 12px;" class="accordion-body">
+                <strong style="font-size: 15px;">Frontend</strong> : HTML, CSS, JavaScript, Thymeleaf<br>
+                <strong style="font-size: 15px;">Backend</strong> : Spring Boot, Spring Security, Spring Data JPA<br>
+                <strong style="font-size: 15px;">Database</strong> : Hibernate, H2 DataBase<br>
+                <strong style="font-size: 15px;">OpenAPI</strong> : BootStrap
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour3">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour3" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour3">
+                💡프로젝트를 진행하면서..
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour3">
+              <div style="font-size: 12px;" class="accordion-body">
+                21년도 이후 경제적으로 악화된 가정상황 떄문에 생계와 건강이 악화 되서 코딩 공부를 잠시 멈췄습니다, 하지만 개발자의 꿈을 계속 버리진 않았기에, 또 이 꿈을 잊지않았단것을 증명할 필요가 있기에, 또 공백기간을 메꾸기위해 다시 공부와 개발을 시작하고,<br>
+                'AJN's Qna Coummity' 완성했습니다. (그래서 페이지 대문을 '중요한건 꺾이지 않는 마음'으로 지었습니다..ㅎ)
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive3">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive3" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive3">
+                👉링크
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive3">
+              <div style="font-size: 12px;" class="accordion-body">
+                <a href="https://youtu.be/jEo_yRkK008" target="_blank">💿시연 영상 </a> <br>
+                <a href="https://drive.google.com/file/d/1sgrcsjTe-N9YAg76m46PyCCZIhJ_LsTX/view?usp=sharing" target="_blank">📊PPT</a><br>
+                <a href="https://github.com/dks044/AJN-QnACoummity#ajns-qna-coummity" target="_blank"><i class="fa-brands fa-square-github"></i>소스코드</a><br>
+                <a href="http://52.78.217.39:8080/question/list" target="_blank">🚀링크</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--project Box end--><br><br>
+  <div id="project_" class="container-12"><!--project Box start-->
+    <p style="font-size: 40px;">JnBlogProject1<span style="font-size: 12px;" class="badge text-bg-light">22.11.30 ~ 22.12.09</span><span style="font-size: 9px;" class="badge text-bg-info">개인 프로젝트</span></p>
+    <p>자기소개 및 포트폴리오 소개 페이지입니다.</p>
+    <hr style="background-color: black; width: 30%;">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleIndicators4" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/JnBlogProject/resource/jnblog1/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/jnblog1/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/jnblog1/3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne4">
+              <button style="font-weight: bolder;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne4" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne4">
+                🧐 배경
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne4" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne4">
+              <div class="accordion-body">
+                <p style="font-size: 12px;">
+                  포트폴리오 용도로 제작한 웹사이트 입니다, 
+                  <strong style="color: red;">부족한 프론트엔드 실력을 키우기 위해 시작</strong>
+                  했으며,<br>그 과정에서 디자인감각을 키웠고,
+                  JS,HTML5,CSS3 등 기본 프론트엔드 실력을 학습했습니다.
+                  어떠한 템플릿도 사용하지않고, 직접 만들었습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo4">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo4" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo4">
+                📜프로젝트 구현기능
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo4">
+              <div class="accordion-body">
+                <ul style="list-style-type: none; font-size: 12px;">
+                  <li>간단한 자기소개 및 인적사항</li>
+                  <li>기술스택</li>
+                  <li>깃허브 및 네이버 블로그 링크</li>
+                  <li>프로젝트 경험</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree4">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree4" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree4">
+                ⚒️프로젝트 기술 스택
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree4">
+              <div style="font-size: 12px;" class="accordion-body">
+                Frontend : HTML, CSS, JavaScript
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive4">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive4" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive4">
+                👉링크
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive4">
+              <div style="font-size: 12px;" class="accordion-body">
+                <a href="https://drive.google.com/file/d/1X4qaSKU9Wfh6yDwYPZ_kIntdzXQCb_He/view?usp=share_link" target="_blank">📊PPT</a><br>
+                <a href="https://github.com/dks044/JnBlogProject" target="_blank"><i class="fa-brands fa-square-github"></i>소스코드</a><br>
+                <a href="https://dks044.github.io/JnBlogProject" target="_blank">🚀링크</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--project Box end--><br><br>
+  <div id="project_" class="container-12"><!--project Box start-->
+    <p style="font-size: 40px;">DOROOWA<span style="font-size: 12px;" class="badge text-bg-light">21.01.04 ~ 21.04.01</span><span style="font-size: 9px;" class="badge text-bg-info">팀 프로젝트</span></p>
+    <p>클래스101 페이지를 모티브로 한 강의 소개 페이지 입니다.</p>
+    <hr style="background-color: black; width: 30%;">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleIndicators5" class="carousel slide"><!--슬라이드쇼 추가할떄 id값 바꿔야함-->
+          <div class="carousel-indicators">
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button style="background-color: gray;" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/JnBlogProject/resource/Doroowa/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/Doroowa/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/JnBlogProject/resource/Doroowa/3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+            <span style="background-color: black;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+            <span style="background-color: black;" class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne5">
+              <button style="font-weight: bolder;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne5" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne5">
+                🧐 배경
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne5" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne5">
+              <div class="accordion-body">
+                <p style="font-size: 12px;">
+                  직업훈련 당시 교육생을 4개의 팀으로 나눈후, 각 팀마다 팀프로젝트를 기획해야 하는 단계에서<br>
+                  팀원들이 <strong style="color: red;">Class101</strong> 웹사이트로 공부를 많이하니,<br>
+                  '강의 웹사이트를 제작하면 어떨까?' 생각에서 출발해서 해당 팀프로젝트를 기획하게 되었습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo5">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo5" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo5">
+                📜프로젝트 구현기능
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo5">
+              <div class="accordion-body">
+                <p style="font-size: 12px;">
+                  회원 구분을 <strong style="color: red;">'강사회원', '수강생회원'</strong> 두 분류로 나눈 후,<br>
+                  강사회원은 오픈마켓 메커니즘으로 본인의 강의컨텐츠를 업로드 할수있고,<br>
+                  수강생회원은 업로드 되있는 '강의컨텐츠'를 검색 및 찜하기 등<br>
+                  강의 웹서비스를 이용할 수 있습니다.<br>
+                  오픈마켓(쇼핑몰) 메커니즘 개념의 자유로운 강의 웹 서비스를 구현했습니다.                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree5">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree5" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree5">
+                ⚒️프로젝트 기술 스택
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree5">
+              <div style="font-size: 12px;" class="accordion-body">
+                <strong style="font-size: 15px;">Frontend</strong> : HTML, CSS, JavaScript, AJAX, JSTL<br>
+                <strong style="font-size: 15px;">Backend</strong> : Spring FrameWork(Build Tool:Maven), JSP<br>
+                <strong style="font-size: 15px;">Database</strong> : Oracle 11g<br>
+                <strong style="font-size: 15px;">OpenAPI</strong> : BootStrap
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive5">
+              <button style="font-weight: bolder;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive5" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive5">
+                👉링크
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive5">
+              <div style="font-size: 12px;" class="accordion-body">
+                <a href="https://www.youtube.com/watch?v=aQVnRqvgxLw&feature=youtu.be" target="_blank">💿시연 영상 </a> <br>
+                <a href="https://docs.google.com/presentation/d/1-mk7CkX1Wq_ICACtAogSdXrBn6APgwY4/edit" target="_blank">📊PPT</a><br>
+                <a href="https://github.com/dks044/doroowa" target="_blank"><i class="fa-brands fa-square-github"></i>소스코드</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--project Box end--><br><br><br><br><br><br><br>
+</div>
+<!--Project end-->
+<footer class="text-bg-dark p-3 text-center">
+  <h4>© 2023. Ahn Jong Yun. All rights reserved.</h4>
+</footer>
 <!--JavaScript-->
 <script src="/JnBlogProject/index.js"></script>
 <!-- Bootstrap JS -->
